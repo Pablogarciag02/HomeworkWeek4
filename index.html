@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./Assets/style.css">
+    <title>My Coding Quiz</title>
+</head>   
+
+
+    <body>
+        <header>
+
+            <nav class="highscores">
+            <p>View Highscores</p>
+            </nav>
+
+            <aside>
+                Time Remaining: <span id="timing"></span> seconds</span>
+            </aside>
+            
+        </header>
+
+        <div id = "start">
+            <h1>
+            Coding Quiz Challenge
+            </h1>
+            <p> Try to answer the following code-related questions within the time limit. 
+            Keep in mind that incorrect answers will penalize you scoretime by ten seconds
+            </p>
+            <button id = "startQ" Quiz>Start Quiz</button>
+        </div>
+
+        <div id = "q1">
+            <h1>
+            Arrays in JavaScript can be used to store______________.
+            </h1>
+            <ul class = "wrong">
+            <li><button>1. Numbers and Strings</button></li>
+            <li><button>2. Other Arrays</button></li>
+            <li><button>3. Booleans</button></li>
+             <li><button id = "c1">4. All of the above</button></li>
+            </ul>
+        </div>
+
+        <div id = "q2">
+            <h1>
+            String values must be enclosed within ______ when being assigned to variables.
+            </h1>
+            <ul>
+            <li><button>1. Commas</button></li>
+            <li><button>2. Curly Brackets</button></li>
+            <li><button id = "c2">3. Quotes</button></li>
+            <li><button>4. Parenthesis</button></li>
+            </ul>
+        </div>
+
+        <div id = "q3">
+            <h1>
+            A very useful tool used during development and debugging for printing content to the debugger is:
+            </h1>
+            <ul>
+            <li><button>1. JavaScript</button></li>
+            <li><button>2. Terminal/Bash</button></li>
+            <li><button>3. For loops</button></li>
+            <li><button id = "c3">4. Console.log</button></li>
+            </ul>
+        </div>
+
+        <div id = "q4">
+            <h1>
+            Commonly used data types DO NOT include:
+            </h1>
+            <ul class = "wrong">
+            <li><button>1. strings</button></li>
+            <li><button>2. booleans</button></li>
+            <li><button id = "c4">3. alerts</button></li>
+             <li><button>4. numbers</button></li>
+            </ul>
+        </div>
+
+        <div id = "q5">
+            <h1>
+            The condition in an if / else statement is enclosed within _____.
+            </h1>
+            <ul class = "wrong">
+            <li><button>1. quotes</button></li>
+            <li><button id = "c5">2. Parenthesis</button></li>
+            <li><button>3. curly brackets</button></li>
+             <li><button>4. square brackets</button></li>
+            </ul>
+        </div>
+
+        <div id = "initials">
+            <h1>All done!</h1>
+            <p>Enter initials</p> <form><input id="form" type="text"></form> 
+            <button id = "sbutton">Submit</button>
+        </div>
+
+        <div id = "highscores">
+            <h1>Highscores</h1>
+            <span id= "formq"> </span>
+
+            <button id = "restart">Go Back</button> <button>Clear Highscores</button>
+        </div>
+
+
+
+    </body>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="assets/script.js"></script>
+
+
+</html>
+
+
+
