@@ -95,19 +95,6 @@ document.getElementById("restart").onclick = function () {
 
 }
 
-let formAnswers = $("#form");
-
-function handleFormSubmit(event){
-    event.preventDefault();
-
-    console.log("form", formAnswers.val());
-
-    $.each(checkedE1, function() {
-        selected.push($(this).val());
-    });
-
-    console.log("form");
-}
 
 
 
