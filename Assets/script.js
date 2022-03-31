@@ -7,6 +7,7 @@ document.getElementById("q5"). style.display = "none";
 document.getElementById("initials"). style.display = "none";
 document.getElementById("highscores"). style.display = "none";
 document.getElementById("wrong"). style.display = "none";
+document.getElementById("showH"). style.display = "none";
 
 
 //Starts the timer and ends it once the answer for the final question is given.
@@ -28,6 +29,8 @@ function begin() {
         document.getElementById("wrong").style.display = "none";
 
         document.getElementById("initials"). style.display = "block";
+
+        document.getElementById("showH").style.display = "block";
 
         
       }
@@ -153,18 +156,35 @@ document.getElementById("w15").onclick = function () {
 }
 
 
-//When the submit button is pressed the highscores page is shown
-document.getElementById("sbutton").onclick = function () {
+//This function adds the text from the box into local storage and displays it in the text area.
+function add_local() {
+    const display = {};
+    display.firstname = document.getElementById('form').value;
+ 
+    window.localStorage.setItem('hs', JSON.stringify(display));
+    
+    let _display = JSON.parse(localStorage.getItem("hs"));
+    document.getElementById('form').value = _display.firstname;
+    document.getElementById('hs').value = Object.values(_display);
+     
+}
+
+
+//When the show highscores button is pressed the highscores page is shown
+document.getElementById("showH").onclick = function () {
 
     document.getElementById("initials").style.display = "none";
 
     document.getElementById("wrong").style.display = "none";
+
+    document.getElementById("showH").style.display ="none";
 
     document.getElementById("highscores"). style.display = "block";
 
 }
 
 
+//restarts the whole code and allows the user to start the quiz again.
 document.getElementById("restart").onclick = function () {
 
     document.getElementById("start"). style.display = "block";
@@ -172,3 +192,4 @@ document.getElementById("restart").onclick = function () {
     document.getElementById("highscores"). style.display = "none";
 
 }
+

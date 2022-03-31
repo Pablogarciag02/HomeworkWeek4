@@ -26,8 +26,8 @@
             <h1>
             Coding Quiz Challenge
             </h1>
-            <p> Try to answer the following code-related questions within the time limit. 
-            Keep in mind that incorrect answers will penalize you scoretime by ten seconds
+            <p> 
+                Try to answer the following code-related questions within the time limit. 
             </p>
             <button id = "startQ" Quiz>Start Quiz</button>
         </div>
@@ -96,22 +96,28 @@
             <h1>Try Again!!!</h1>
         </div>
 
+        <div id=initials>
+            <h1>
+            All done!
+            </h1>
+            <p>
+            Enter Initials
+            </p>
+            <input type="text" id="form"> </input>
+            <input type="button" id="sbutton" value="Submit" onclick="add_local()"> </input>
+            </div>
 
-        <div id = "initials">
-            <h1>All done!</h1>
-            <p>Enter initials</p> <form><input id="form" type="text"></form> 
-            <button id = "sbutton">Submit</button>
-        </div>
+            <div id="centerB">
+            <button id="showH">Show Highscores</button>
+            </div>
 
-        <div id = "highscores">
-            <h1>Highscores</h1>
-            <span id= "formq"> </span>
-
-            <button id = "restart">Go Back</button> <button>Clear Highscores</button>
-        </div>
-
-
-
+            <div id="highscores">
+                <h1>
+                Highscores
+                </h1>
+                <button id = "restart">Go Back</button> 
+                <textarea id="hs" name="display" rows="10"></textarea>
+              </div>
 
     </body>
 

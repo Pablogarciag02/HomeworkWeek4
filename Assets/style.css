@@ -39,6 +39,13 @@ li{
     
 }
 
+/*centers the button that displays the highscores*/
+#centerB{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 
 
